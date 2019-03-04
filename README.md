@@ -1,2 +1,2 @@
-# http://set-weather.surge.sh/
+# set-weather.surge.sh/
 Save weather in localStorage
