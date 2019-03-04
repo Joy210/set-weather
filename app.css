@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.bg-lightblue {
+    /* background: lightblue; */
+    /* border: 1px solid rgb(24, 34, 44); */
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.list-group-item {
+    background: none;
+    border: 1px solid rgba(35, 50, 65, 0.8);
+}
+
+.btn {
+    outline: none;
+    box-shadow: none;
+}
+
+h1#w-location {
+    font-weight: bold;
+}
+
+h3#w-desc {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3#w-string {
+    font-size: 1.2rem;
+}
+
+section {
+    display: flex;
+    width: 1000px;
+    height: auto;
+    margin: 4rem auto;
+    margin-bottom: 0;
+    /* background: #000; */
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.bg-image {
+    flex: 1;
+    box-sizing: border-box;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-image img {
+    width: 120px;
+    height: auto;
+}
+
+.bg-image h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+.weather {
+    flex: 1;
+    background: #2B3E50;
+    box-sizing: border-box;
+    /* box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.3); */
+}
+
+.w-box1 {
+    background: rgb(21, 30, 39);
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 2rem;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.w-box {
+    padding: 2.5rem;
+    padding-right: 3.5rem;
+    width: 90%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        /* margin: 0; */
+    }
+
+    .bg-image {
+        display: none;
+    }
+
+    .weather {
+        width: 100%;
+        height: 100%;
+    }
+
+    .w-box {
+        width: 100%;
+        margin: auto;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 2rem auto;
+    }
+}
+
+
+@media (max-width: 414px) {
+    h1#w-location {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    h1#w-location {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1#w-location {
+        font-size: 22px;
+    }
+
+    h3#w-desc {
+        font-size: 1.2rem;
+    }
+
+    h3#w-string {
+        font-size: 1rem;
+    }
+
+    .list-group-item {
+        font-size: 0.8rem;
+    }
+}
